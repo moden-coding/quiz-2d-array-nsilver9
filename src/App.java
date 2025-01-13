@@ -57,7 +57,17 @@ public class App {
 
 
     public static int columnRowAddition(int[][] arr, int row, int col){
-        
-        return -1;//placeholder
+        int sumRow = 0;
+        for (int i = 0; i < arr[row].length; i++){
+			sumRow = sumRow + arr[row][i];
+		}
+
+        int sumCol = 0;
+        for(int j = 0; j < arr[0].length; j++){
+            sumCol = arr[col][j];
+        }
+
+        int sum = sumRow + sumCol;
+        return sum;
     }
 }
